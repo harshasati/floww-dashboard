@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Profile from './components/Profile';
+import TaskList from './components/TaskList';
+import Statistics from './components/Statistics';
+
+import userData from './data/user.json';
+import tasksData from './data/tasks.json';
 
 function App() {
+  const [user] = useState(userData);
+  const [tasks, setTasks] = useState(tasksData);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <h1>🌟 Floww Dashboard</h1>
+
+      <div className="dashboard">
+        <Profile user={user} />
+        <TaskList tasks={tasks} setTasks={setTasks} />
+        <Statistics tasks={tasks} />
+      </div>
     </div>
   );
 }

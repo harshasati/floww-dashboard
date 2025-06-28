@@ -1,0 +1,5 @@
+[
+  { "id": 1, "task": "Complete Floww dashboard", "completed": false },
+  { "id": 2, "task": "Submit resume", "completed": true },
+  { "id": 3, "task": "Send assignment via email", "completed": false }
+]

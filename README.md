@@ -3,6 +3,29 @@
 
 This project is a submission for the Frontend Developer Internship at Floww APIs Pvt Ltd. It contains a user-friendly dashboard built using React.js and includes clean, responsive UI components and wireframe designs for login and signup pages.
 
+## 📌 Project Structure
+
+floww-dashboard/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── Profile.js
+│ │ ├── TaskList.js
+│ │ └── Statistics.js
+│ ├── data/
+│ │ ├── user.json
+│ │ └── tasks.json
+│ ├── App.js
+│ ├── App.css
+│ └── index.js
+├── README.md
+└── package.json
+
+yaml
+Copy
+Edit
+
+
 
 ---
 
